@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+/*int main()
+{
+    float A,B,C,AB,BC,CA;
+    printf("Enter the sides of the triangle A,B,C\n");
+    scanf("%f %f %f",&A,&B,&C);
+    printf("Enter the angles of the triangle AB,BC,CA\n");
+    scanf("%f %f %f",&AB,&BC,&CA);
+    if(((A==B)&&(B==C))&&(C==A))
+    {
+        if(((AB==60)&&(BC==60))&&(CA==60))
+        {
+            printf("Equilateral triangle\n");
+        }
+        else
+        printf("Not an Equilateral triangle\n");
+    }
+    else
+    printf("Not an Equilateral triangle\n");
+    return 0;
+}*/
+
+/*int main()
+{
+    float AB,BC,CA,ABC,BCA,CAB;
+    printf("Enter the sides of the triangle AB,BC,CA\n");
+    scanf("%f %f %f",&AB,&BC,&CA);
+    printf("Enter the angles of the triangle ABC,BCA,CAB\n");
+    scanf("%f %f %f",&ABC,&BCA,&CAB);
+    if(((AB==BC)||(AB==CA))||(BC==CA))
+    {
+        if(((ABC==BCA)||(ABC==CAB))||(BCA==CAB))
+        {
+            printf("Isosceles triangle\n");
+        }
+        else
+        printf("Not an Isosceles triangle\n");
+    }
+    else
+    printf("Not an Isosceles triangle\n");
+    return 0;
+}*/
