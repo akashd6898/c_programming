@@ -1,0 +1,82 @@
+//finding a date is leap year or not
+int main()
+{
+    typedef struct date
+    {
+        int day,mon,year;
+    }d;
+    d user_date;
+    printf("enter the day month year of date in linear space\n");
+    scanf("%i %i %i",&user_date.day,&user_date.mon,&user_date.year);
+    if(user_date.year%4!=0 && user_date.year%100!=0)
+        printf("Leap year\n");
+    if(user_date.year%400==0)
+    {
+        printf("Leap year\n");
+    }
+    else
+        printf("Not a leap year\n");
+}
+
+/*int main()
+{
+    int arr[7]={12,23,4,2,1,35,47},temp;
+    for(int i=0;i<sizeof(arr)/sizeof(int);i++)
+    {
+        for(int j=0;j<sizeof(arr)/sizeof(int);j++)
+        {
+            if(arr[i]>arr[j])
+            {
+                arr[i]=arr[i];
+            }
+            else{
+                temp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=temp;
+            }
+        }
+    }
+    for(int i=0;i<sizeof(arr)/sizeof(int);i++)
+    {
+        printf("%i ",arr[i]);
+    }
+}*/
+//printing 3rd place of every number
+/*int main()
+{
+    int arr[]={1,2,3,4,5,6},skip=3;
+    int elements=(sizeof(arr)/sizeof(arr[0]));
+    printf("elements:%i\n",elements);
+    for(int i=0;i<elements;i++)
+    {
+        if((i+skip)<elements)
+        {
+            printf("%i",arr[i+skip]);
+        }
+        else
+        {
+            printf("%i",arr[i-skip]);
+        }
+    }
+    printf("\n");
+}*/
+
+//finding even or odd day repect to date
+/*int main()
+{
+    typedef struct date
+    {
+        int day,month,year;
+    }d;
+    d userdate;
+    printf("enter the date with space as format day month year\n");
+    scanf("%d %d %d",&userdate.day,&userdate.month,&userdate.year);
+    if(userdate.day%2==0)
+    {
+        printf("Even day\n");
+    }
+    else
+    {
+        printf("Odd day\n");
+    }
+}*/
