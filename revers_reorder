@@ -1,0 +1,39 @@
+/*this program reverse the word and place the caps place of non-reversed letter place with reversed letter place.*/
+#include <stdio.h>
+int main()
+{
+    char sent[]="AkaSh";
+    int cap_pos[25],pos=0,ele=-1,temp=0;
+    for(int i=0;sent[i]!='\0';i++)
+    {
+        if(sent[i]>= 'A' && sent[i]<= 'Z')
+        {
+            sent[i]=sent[i]+32;
+            cap_pos[pos]=i;
+            pos++;
+            ele++;
+        }
+    }//this
+    for(int i=0;i<=3;i++)
+    {
+        for(int j=0;j<3;j++)
+        {
+            if(sent[j]>sent[j+1])
+            {
+                temp=sent[j+1];
+                sent[j+1]=sent[j];
+                sent[j]=temp;
+            }
+        }
+    }
+    
+    for(int i=0;i<=ele;i++)
+    {
+        //printf("%i\n",cap_pos[i]);
+        sent[cap_pos[i]]=(sent[cap_pos[i]]-32);
+    }
+    for(int i=0;sent[i]!='\0';i++)
+    {
+        printf("%c",sent[i]);
+    }
+}
