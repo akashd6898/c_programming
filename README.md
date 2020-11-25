@@ -1,1 +1,2 @@
-# c_programming
+# c programming
+the content in repository are c programming
